@@ -194,7 +194,7 @@ export default function App() {
   return (
     <>
       <GitHubLink
-        href="https://github.com/RosaErick/random-quote-generator-fcc"
+        href="https://github.com/RosaErick/markdown-preview-fcc"
         aria-label="View source on GitHub"
       >
         <GitHubIcon viewBox="0 0 250 250" aria-hidden="true">
