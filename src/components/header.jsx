@@ -1,12 +1,15 @@
 import React from "react";
-import styled from 'styled-components';
+import styled from "styled-components";
 
-const HeaderBlock = styled.div`
+const HeaderBlock = styled.header`
+  padding: 1em;
+  text-align: center;
 
-
-`
-
-
+  h1 {
+    font-size: 3.052em;
+    font-weight: normal;
+  }
+`;
 
 const Header = () => {
   return (
