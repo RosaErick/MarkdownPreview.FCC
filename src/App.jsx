@@ -4,7 +4,6 @@ import Preview from "./components/preview";
 import { Editor } from "./components/editor";
 import styled, { keyframes } from "styled-components";
 
-
 const GitHubIconArm = styled.path`
   transform-origin: 8em 6em;
   fill: #f9f9f9;
@@ -55,7 +54,139 @@ const Wrapper = styled.div`
   min-height: 100vh;
 `;
 
-const placeholder = "blakblak";
+const placeholder = `**Guia de sintaxe de Markdown**
+
+### Títulos
+
+Para criar um título, adicione entre 1 e 6 \`#\` na frente da palavra ou frase. O \`#\` corresponderá ao nível do título.
+
+# Nível de título 1
+
+## Nível de título 2
+
+### Nível de título 3
+
+#### Nível de título 4
+
+##### Nível de título 5
+
+###### Nível de título 6
+
+
+### Parágrafos
+
+Para criar um parágrafo, use uma linha em branco para separar uma ou mais linhas de texto.
+### Quebras de linha
+
+Para criar uma quebra de linha, termine uma linha com dois ou mais espaços e, em seguida, pressione return/enter.
+Esta é a primeira linha.
+Esta é a segunda linha
+
+
+### Ênfase
+
+Para colocar uma palavra ou frase em itálico, adicione um asterisco ou sublinhado antes e depois de uma palavra ou frase.
+
+*Este texto ficará em itálico.*
+
+_Este texto também ficará em itálico._
+Para colocar uma palavra ou frase em negrito, adicione dois asteriscos ou sublinhados antes e depois de uma palavra ou frase.
+
+**Este texto estará em negrito.**
+
+__Este texto também estará em negrito.__
+
+
+### Citações em bloco
+
+Para criar uma citação em bloco, adicione um > na frente de um parágrafo. Se você precisar ter uma citação em bloco com vários parágrafos, você pode adicionar um > nas linhas em branco entre os parágrafos.
+Se você precisar aninhar citações em bloco, adicione um >> na frente do parágrafo que deseja aninhar.
+> O Markdown pretende ser tão fácil de ler e escrever quanto possível.
+>
+> A legibilidade, no entanto, é enfatizada acima de tudo. Um documento formatado por Markdown deve ser publicável como está, como texto simples, sem parecer que foi marcado com tags ou instruções de formatação.
+>
+
+
+### Listas
+
+- Você pode organizar itens em listas não ordenadas e ordenadas.
+
+
+#### Listas não ordenadas
+
+Para criar uma lista não ordenada, adicione traços (-), asteriscos (*) ou sinais de adição (+) na frente dos itens de linha.
+- Item 1
+- Item 2
+  - Item 2.1
+  - Item 2.2
+- Item 3
+
+
+#### Listas ordenadas
+
+Para criar uma lista ordenada, adicione números seguidos por períodos e itens de linha.
+1. Item 1
+2. Item 2
+3. Item 3
+  1. Item 3.1
+  2. Item 3.2
+4. Item 4
+
+
+### Blocos de código
+
+Normalmente são recuados quatro espaços ou uma tabulação.
+Você pode envolver seu código com \`\`\` para criar um bloco de código e, adicionando um idioma opcional, seu código terá realce de sintaxe.
+Você pode recuar cada linha do bloco em pelo menos quatro espaços ou uma tabulação.
+\`\`\`js
+console.log("Olá mundo!");
+\`\`\`
+    <html>
+      <head></head>
+      <corpo>
+        <h1>Olá Mundo</h1>
+      </body>
+    </html>
+
+### Regras horizontais
+
+Para criar uma régua horizontal, use três ou mais asteriscos (***), traços (---) ou sublinhados (___) em uma linha.
+***
+
+
+### Imagens
+
+Para adicionar uma imagem, adicione um ponto de exclamação (!), seguido por um texto alternativo entre colchetes e o caminho ou URL para o recurso de imagem.
+
+![Logo](http://blog.joeybronner.fr/wp-content/uploads/2014/02/markdown_logo_large.png)
+
+Para adicionar um link a uma imagem, coloque o Markdown da imagem entre colchetes e adicione o link entre parênteses
+
+![Status da Netlify](https://api.netlify.com/api/v1/badges/4f96a8ed-8cd8-437e-8179-0f654debd772/deploy-status)
+
+### Links
+
+Para criar um link, coloque o texto do link entre colchetes e siga-o imediatamente com o URL entre parênteses.
+Para adicionar um título, coloque-o entre parênteses após o URL.
+Este é um [link](https://github.com/RosaErick/markdown-preview-fcc) para o repositório.
+Você pode ler mais sobre Markdown [aqui](https://www.markdownguide.org/basic-syntax "Markdown Guide").
+
+### URLs e endereços de e-mail
+
+Para transformar um URL ou endereço de e-mail em um link, coloque-o entre colchetes angulares.
+<https://daringfireball.net/projects/markdown/syntax>
+<seunome@exemplo.com>
+
+### Listas de tarefas
+- [x] este é um item completo
+- [ ] este é um item incompleto
+
+### Tabelas
+
+| Cabeçalho | Cabeçalho |
+| -------- |:--------:|
+| Conteúdo | Conteúdo |
+`;
 
 export default function App() {
   const [text, setText] = useState(placeholder);

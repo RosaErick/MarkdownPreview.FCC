@@ -1,26 +1,22 @@
 body {
   margin: 0;
-  font-family: -apple-system, 'Oxygen', 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, "Oxygen", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-
-textarea{
+textarea {
   color: #282c30;
   resize: none;
+  padding: 1rem;
+  margin-left: 1rem;
   font-size: 1rem;
   font-family: inherit;
   border: 1px solid #cdc9c3;
-  padding: 1rem;
-  margin-left: 1rem;
-
-
 }

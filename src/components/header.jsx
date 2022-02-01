@@ -16,12 +16,13 @@ const Header = () => {
     <HeaderBlock>
       <h1 className="HeaderTitle">Markdown Previewer</h1>
       <p>
-        Markdown is a lightweight markup language with plain-text-formatting
-        syntax. Its main goal is to be very easy to read and write, even when
-        not converted to HTML.
+        Markdown é uma linguagem de marcação leve com sintaxe de formatação de
+        texto simples. Seu principal objetivo é ser muito fácil de ler e
+        escrever, mesmo quando não convertido em HTML.
       </p>
       <p>
-        Type some Markdown on the left and see the HTML rendered on the right.
+        Digite um pouco de Markdown à esquerda e veja o HTML renderizado à
+        direita.
       </p>
     </HeaderBlock>
   );

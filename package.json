@@ -1,5 +1,6 @@
 {
   "name": "markdown-preview-fcc",
+  "author":"Erick Rosa",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
