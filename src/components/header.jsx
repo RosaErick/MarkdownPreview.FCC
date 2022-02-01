@@ -14,7 +14,7 @@ const HeaderBlock = styled.header`
 const Header = () => {
   return (
     <HeaderBlock>
-      <h1 className="HeaderTitle">Markdown Previewer</h1>
+      <h1 className="HeaderTitle">Leitor de Markdown</h1>
       <p>
         Markdown é uma linguagem de marcação leve com sintaxe de formatação de
         texto simples. Seu principal objetivo é ser muito fácil de ler e
